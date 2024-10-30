@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator</title>
+<link rel="stylesheet" type="text/css" href="/storage/emulated/0/Web 1/styles/style.css">
+</head>
+<body>
+<div class="container">
+  <div class="calculator">
+    <form>
+      <div class="display">
+        <input type="text" name="display">
+      </div>
+      <div>
+        <input type="button" value="AC" oneclick="allClear()">
+        <input type="button" value="DE" oneclick="deleteSingleValue = deleteSingleValue.toString()">
+        <input type="button" value="." oneclick="showOnDisplay()">
+        <input type="button" value="/" oneclick="showOnDisplay()">
+      </div>
+      <div>
+        <input type="button" value="7" oneclick="showOnDisplay()">
+        <input type="button" value="8" oneclick="showOnDisplay()">
+        <input type="button" value="9" oneclick="showOnDisplay()">
+        <input type="button" value="*" oneclick="showOnDisplay()">
+      </div>
+      <div>
+      <input type="button" value="4" oneclick="showOnDisplay()">
+      <input type="button" value="5" oneclick="showOnDisplay()">
+      <input type="button" value="6" oneclick="showOnDisplay()">
+      <input type="button" value="-" oneclick="showOnDisplay()">
+      </div>
+      <div>
+        <input type="button" value="1" oneclick="showOnDisplay()">
+        <input type="button" value="2" oneclick="showOnDisplay()">
+        <input type="button" value="3" oneclick="showOnDisplay()">
+        <input type="button" value="+" oneclick="showOnDisplay()">
+      </div>
+      <div>
+        <input type="button" value="00" oneclick="showOnDisplay()">
+        <input type="button" value="0" oneclick="showOnDisplay()">
+        <input type="button" value="=" class="equal" oneclick="calculatorResult()">
+      </div>
+    </form>
+    
+  </div>
+</div>
+<script src="/storage/emulated/0/Web 1/scripts/script.js"></script>
+</body>
+</html>
