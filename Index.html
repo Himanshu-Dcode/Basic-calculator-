@@ -1,49 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Simple Calculator</title>
-<link rel="stylesheet" type="text/css" href="/storage/emulated/0/Web 1/styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
 </head>
+
 <body>
-<div class="container">
-  <div class="calculator">
-    <form>
-      <div class="display">
-        <input type="text" name="display">
-      </div>
-      <div>
-        <input type="button" value="AC" onclick="allClear()">
-        <input type="button" value="DE" onclick="deleteSingleValue = deleteSingleValue.toString()">
-        <input type="button" value="." onclick="showOnDisplay()">
-        <input type="button" value="/" onclick="showOnDisplay()">
-      </div>
-      <div>
-        <input type="button" value="7" onclick="showOnDisplay()">
-        <input type="button" value="8" onclick="showOnDisplay()">
-        <input type="button" value="9" onclick="showOnDisplay()">
-        <input type="button" value="*" onclick="showOnDisplay()">
-      </div>
-      <div>
-      <input type="button" value="4" onclick="showOnDisplay()">
-      <input type="button" value="5" onclick="showOnDisplay()">
-      <input type="button" value="6" onclick="showOnDisplay()">
-      <input type="button" value="-" onclick="showOnDisplay()">
-      </div>
-      <div>
-        <input type="button" value="1" onclick="showOnDisplay()">
-        <input type="button" value="2" onclick="showOnDisplay()">
-        <input type="button" value="3" onclick="showOnDisplay()">
-        <input type="button" value="+" onclick="showOnDisplay()">
-      </div>
-      <div>
-        <input type="button" value="00" onclick="showOnDisplay()">
-        <input type="button" value="0" onclick="showOnDisplay()">
-        <input type="button" value="=" class="equal" onclick="calculatorResult()">
-      </div>
-    </form>
-    
-  </div>
-</div>
-<script src="/storage/emulated/0/Web 1/scripts/script.js"></script>
+    <div class="container">
+        <h1>Calculator By Himanshu</h1>
+
+        <div class="calculator">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td><button>C</button></td>
+                    <td><button>%</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>X</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>/</button></td>
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 </body>
+<script src="index.js"></script>
+
 </html>
